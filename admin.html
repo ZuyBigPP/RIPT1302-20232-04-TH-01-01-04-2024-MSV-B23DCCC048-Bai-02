@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quản trị</title>  
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <h1>Quản lý sinh viên</h1>
+
+    <form id="studentForm">
+        <input type="text" id="name" placeholder="Tên">
+        <input type="number" id="age" placeholder="Tuổi">
+        <input type="text" id="address" placeholder="Địa chỉ">
+        <input type="text" id="phone" placeholder="Số điện thoại">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="Lớp" placeholder="Lớp">
+        <button type="submit">Thêm mới</button>
+    </form>
+
+    <table id="studentTable">
+        <tr>
+            <th>STT</th>
+            <th>Tên</th>
+            <th>Tuổi</th>
+            <th>Địa chỉ</th>
+            <th>Số điện thoại</th>
+            <th>Email</th>
+            <th>Lớp</th>
+            <th>Thao tác</th>
+        </tr>
+        <!-- Các hàng sinh viên sẽ được thêm vào đây -->
+    </table>
+    <dialog id="editDialog">
+        <form id="editForm">
+            <input type="hidden" id="editRowIndex">
+            <input type="text" id="editName" placeholder="Tên">
+            <input type="number" id="editAge" placeholder="Tuổi">
+            <input type="text" id="editAddress" placeholder="Địa chỉ">
+            <input type="text" id="editPhone" placeholder="Số điện thoại">
+            <input type="email" id="editEmail" placeholder="Email">
+            <input type="text" id="editClass" placeholder="Lớp">
+            <button type="submit">Lưu</button>
+            <button type="button" onclick="closeEditDialog()">Hủy</button>
+        </form>
+    </dialog>
+    
+
+    <script src="admin.js"></script>
+</body>
+</html>
